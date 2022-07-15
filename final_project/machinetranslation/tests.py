@@ -1,6 +1,6 @@
 import unittest
 
-from translator import english_to_french, french_to_english
+from machinetranslation.translator import english_to_french, french_to_english
 
 class TestMyModule(unittest.TestCase):
 
@@ -13,7 +13,7 @@ class TestMyModule(unittest.TestCase):
     def test_french_to_english(self):
 
         self.assertEqual(french_to_english(" ")," ")
-        
+
         self.assertEqual(french_to_english('Bonjour'), 'Hello')
 
 unittest.main()
